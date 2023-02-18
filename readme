@@ -1,0 +1,7 @@
+This app is designed to help you keep track of the books you have read. 
+It allows you to store information such as title, author, rating, and any notes you want to keep about the book. 
+
+Clicking the Add book button opens up an off canvas form that allows you to put in a book of your choosing. 
+
+You are able to delete any book (including the two that are show on loading) with the delete buttons. 
+

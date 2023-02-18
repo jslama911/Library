@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Library</h1>
+    <button onclick="openNav()">Add book</button>
+    <div id="cards">
+        <div id="card" class="card1">
+            <div id="author">
+                <p>Author's name</p>
+            </div>
+            <div id="title">
+                <p>Title of the book</p>
+            </div>
+            <div id="Dates read">
+                <p>Pages</p>
+            </div>
+            <div id="rating">
+                <p>Rating</p>
+            </div>
+            <div id="description">
+                <p>Description of the book</p>
+            </div>
+            <div id="delete">
+                <button id="delete" onclick="deleteBook1()">Delete</button>
+                </div>
+                <script>
+                    function deleteBook1(){
+                        document.querySelector('.card1').remove();
+                    }
+                    </script>
+        </div>
+        <div id="card" class="card2">
+            <div id="author">
+                <p>Author's name</p>
+            </div>
+            <div id="title">
+                <p>Title of the book</p>
+            </div>
+            <div id="pages">
+                <p>Pages</p>
+            </div>
+            <div id="rating">
+                <p>Rating</p>
+            </div>
+            <div id="description">
+                <p>Description of the book</p>
+            </div>
+            <div id="delete">
+                <button id="delete" onclick="deleteBook2()">Delete</button>
+                </div>
+                <script>
+                    function deleteBook2(){
+                        document.querySelector('.card2').remove();
+                    }
+                    </script>
+        </div>
+        
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <form>
+            <input type="text" id="oneLine" class="author" placeholder="Author's name">
+            <input type="text" id="oneLine" class="title" placeholder="Title of the book">
+            <input type="text" id="oneLine" class="pages" placeholder="Pages">
+            <input type="text" id="oneLine" class="rating" placeholder="Rating 1-10">
+            <textarea id="multipleLine" class="description" placeholder="Enter a description here" rows="5"></textarea>
+        </form>
+        <button onclick="addBook()">Submit</button>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
